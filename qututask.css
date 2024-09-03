@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 6rem auto;
+    max-width: 1140px;
+    width: 85%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.kart{
+    width: 100%;
+   /* height: 100%; */
+    display: flex;
+    overflow: hidden;
+
+    .kart-sol{
+        width: 100%; 
+        border: 3px solid black;
+     }
+     
+     .kart-sag{
+         width: 100%;
+         background-color: aquamarine;
+         color: aliceblue;
+         /* flex-shrink: 0; */
+         color: black;
+         overflow: hidden;
+     }
+
+     &:hover{
+        .kart-sag,.kart-sol{
+        transform: translateX(-100%);
+        transition: all .4s; 
+     }   
+    }  
+}
+
+p{
+    padding: 40px;
+}
+
